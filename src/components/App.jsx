@@ -2,14 +2,14 @@ import React, { lazy, Suspense } from 'react';
 import { Switch, Route, withRouter } from 'react-router-dom';
 import GlobalStyle from 'styles';
 
-const Prime = lazy(() => import('modules/Prime'));
+const Home = lazy(() => import('modules/Home'));
 
 const App = () => (
   <main>
     <GlobalStyle />
     <Suspense fallback={<span>loading</span>}>
       <Switch>
-        <Route path="/" component={Prime} exact />
+        <Route path="/" component={Home} exact />
       </Switch>
     </Suspense>
   </main>
