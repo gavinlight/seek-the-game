@@ -2,6 +2,9 @@ export default {
   colors: {
     white: '#ffffff',
     black: '#000000',
+    red: Object.assign('#d14b4b', {
+      hover: '#f75555',
+    }),
   },
   fonts: {
     sourcesans: '"Source Sans Pro", sans-serif',

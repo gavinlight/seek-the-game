@@ -22,4 +22,5 @@ export const Heading = styled.h1`
   font-size: 3.2em;
   font-weight: 600;
   color: ${(props) => props.theme.colors.white};
+  margin: 0 0 25px;
 `;
