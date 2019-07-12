@@ -13,10 +13,10 @@ export default styled.div`
   `}
 
   ${media.desktop`
-    max-width: ${sizes.desktop - 30}px;
+    max-width: ${sizes.desktop - 50}px;
   `}
 
   ${media.large`
-    max-width: ${sizes.large - 30}px;
+    max-width: ${sizes.large - 50}px;
   `}
 `;

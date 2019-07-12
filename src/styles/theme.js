@@ -8,5 +8,6 @@ export default {
   },
   fonts: {
     sourcesans: '"Source Sans Pro", sans-serif',
+    rosemary: '"Rosemary", sans-serif',
   },
 };
