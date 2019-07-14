@@ -7,7 +7,7 @@ import Button from 'common/Button';
 
 import { IntroContainer, Heading, SeeMore, PayPal, PayPalText } from './styled';
 
-const Home = () => (
+const Intro = () => (
   <IntroContainer>
     <Container>
       <Heading dangerouslySetInnerHTML={{ __html: data.intro_text }} />
@@ -29,4 +29,4 @@ const Home = () => (
   </IntroContainer>
 );
 
-export default Home;
+export default Intro;
