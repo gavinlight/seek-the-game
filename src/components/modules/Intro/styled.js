@@ -77,16 +77,3 @@ export const SeeMore = styled.button`
     transform: translate(-50%, -5px);
   }
 `;
-
-export const PayPal = styled.div`
-  margin-top: 60px;
-
-  & input[type="image"] {
-    margin-top: 8px;
-  }
-`;
-
-export const PayPalText = styled.p`
-  margin: 0 0 4px;
-  color: ${(props) => props.theme.colors.white};
-`;
