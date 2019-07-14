@@ -30,7 +30,7 @@ const Home = () => (
           </form>
         </PayPal>
       </Container>
-      <SeeMore>See more V</SeeMore>
+      <SeeMore>See more</SeeMore>
     </IntroContainer>
   </Page>
 );
