@@ -9,7 +9,7 @@ import { GalleryContainer, MediaContainer, Heading, Categories } from './styled'
 
 const categories = {
   '*': 'All',
-  image: 'Image',
+  image: 'Images',
   video: 'Video',
   audio: 'Audio',
 };

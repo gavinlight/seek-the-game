@@ -30,6 +30,11 @@ export const Heading = styled.h2`
 export const Categories = styled.div`
   display: flex;
   margin: 0 auto;
-  justify-content: space-between;
-  width: 400px;
+  flex-direction: column;
+
+  ${media.tablet`
+    flex-direction: row;
+    justify-content: space-between;
+    width: 400px;
+  `}
 `;
