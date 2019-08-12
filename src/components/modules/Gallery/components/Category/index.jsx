@@ -16,10 +16,7 @@ Category.propTypes = {
   category: PT.oneOf(['image', 'video', 'audio', '*']).isRequired,
   active: PT.oneOf(['image', 'video', 'audio', '*']).isRequired,
   setCategory: PT.func.isRequired,
-  children: PT.oneOfType([
-    PT.arrayOf(PT.node),
-    PT.node,
-  ]),
+  children: PT.string,
 };
 
 export default Category;
