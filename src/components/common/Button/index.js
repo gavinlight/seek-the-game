@@ -11,7 +11,10 @@ const Button = ({ color, children, ...otherProps }) => (
 
 Button.propTypes = {
   color: PT.oneOf(['red', 'grey']),
-  children: PT.element.isRequired,
+  children: PT.oneOfType([
+    PT.arrayOf(PT.node),
+    PT.node,
+  ]),
 };
 
 Button.defaultProps = {
