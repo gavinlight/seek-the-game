@@ -1,11 +1,10 @@
 import React from 'react';
 import PT from 'prop-types';
 
+import { StyledImage } from './styled';
+
 const Image = ({ url, active }) => (
-  <div style={{ display: active ? 'block' : 'none' }}>
-    <p>Url: {url}</p>
-    <p>Type: image</p>
-  </div>
+  <StyledImage src={url} actice={active} />
 );
 
 Image.propTypes = {

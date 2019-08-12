@@ -8,43 +8,43 @@ export default {
   about_text: 'Seek is an indie survival horror game played from a first-person perspective. A game in the style of Amnesia, Outlast and Cry of Fear, where exploring and avoiding monsters is key. The game is developed in Unreal engine 3 by an independent game development company located in Alkmaar, The Netherlands. Seek is currently in beta and changes may occur to the final product.',
   gallery: [
     {
-      url: 'image1',
+      url: 'http://placehold.it/300x300?id=1',
       type: 'image',
     },
     {
-      url: 'image2',
+      url: 'http://placehold.it/300x300?id=2',
       type: 'image',
     },
     {
-      url: 'image3',
+      url: 'http://placehold.it/300x300?id=3',
       type: 'image',
     },
     {
-      url: 'image4',
+      url: 'http://placehold.it/300x300?id=4',
       type: 'image',
     },
     {
-      url: 'image5',
+      url: 'http://placehold.it/300x300?id=5',
       type: 'image',
     },
     {
-      url: 'image6',
+      url: 'http://placehold.it/300x300?id=6',
       type: 'image',
     },
     {
-      url: 'image7',
+      url: 'http://placehold.it/300x300?id=7',
       type: 'image',
     },
     {
-      url: 'image8',
+      url: 'http://placehold.it/300x300?id=8',
       type: 'image',
     },
     {
-      url: 'image9',
+      url: 'http://placehold.it/300x300?id=9',
       type: 'image',
     },
     {
-      url: 'image10',
+      url: 'http://placehold.it/300x300?id=10',
       type: 'image',
     },
     {

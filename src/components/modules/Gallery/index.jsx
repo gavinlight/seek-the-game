@@ -1,4 +1,5 @@
 import React from 'react';
+import { CSSTransition } from 'react-transition-group';
 
 import data from 'services/appData';
 import Container from 'common/Container';
@@ -34,7 +35,11 @@ const Gallery = () => {
             const { url, type } = media;
             const MediaComponent = mapper(type);
 
-            return <MediaComponent key={url} url={url} active={mediaIsActive(type)} />;
+            return mediaIsActive(type) && (
+              <CSSTransition key={url} timeout={500} classNames="media">
+                <MediaComponent url={url} />
+              </CSSTransition>
+            );
           })}
         </MediaContainer>
       </Container>

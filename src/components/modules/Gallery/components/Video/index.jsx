@@ -1,8 +1,8 @@
 import React from 'react';
 import PT from 'prop-types';
 
-const Video = ({ url, active }) => (
-  <div style={{ display: active ? 'block' : 'none' }}>
+const Video = ({ url }) => (
+  <div style={{ color: 'white', width: '100%' }}>
     <p>Url: {url}</p>
     <p>Type: video</p>
   </div>
@@ -10,7 +10,6 @@ const Video = ({ url, active }) => (
 
 Video.propTypes = {
   url: PT.string,
-  active: PT.bool,
 };
 
 export default Video;

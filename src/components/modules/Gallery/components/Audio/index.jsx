@@ -1,8 +1,8 @@
 import React from 'react';
 import PT from 'prop-types';
 
-const Audio = ({ url, active }) => (
-  <div style={{ display: active ? 'block' : 'none' }}>
+const Audio = ({ url }) => (
+  <div style={{ color: 'white', width: '100%' }}>
     <p>Url: {url}</p>
     <p>Type: audio</p>
   </div>
@@ -10,7 +10,6 @@ const Audio = ({ url, active }) => (
 
 Audio.propTypes = {
   url: PT.string,
-  active: PT.bool,
 };
 
 export default Audio;
