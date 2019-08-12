@@ -2,7 +2,9 @@ export default {
   colors: {
     white: '#ffffff',
     black: '#000000',
-    grey: '#212121',
+    grey: Object.assign('#212121', {
+      hover: '#363636',
+    }),
     red: Object.assign('#d14b4b', {
       hover: '#f75555',
     }),
