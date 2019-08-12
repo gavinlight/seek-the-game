@@ -4,11 +4,18 @@ import data from 'services/appData';
 import Container from 'common/Container';
 
 import mapper from './mapper';
-import { GalleryContainer, MediaContainer, Heading, Categories, Category } from './styled';
+import { Category } from './components';
+import { GalleryContainer, MediaContainer, Heading, Categories } from './styled';
+
+const categories = {
+  '*': 'All',
+  image: 'Image',
+  video: 'Video',
+  audio: 'Audio',
+};
 
 const Gallery = () => {
   const [category, setCategory] = React.useState('*');
-  const onSetCategory = (category) => () => setCategory(category);
   const mediaIsActive = (type) => category === '*' || type === category;
 
   return (
@@ -16,10 +23,11 @@ const Gallery = () => {
       <Container>
         <Heading>Some of seek's media</Heading>
         <Categories>
-          <Category onClick={onSetCategory('*')}>All</Category>
-          <Category onClick={onSetCategory('image')}>Images</Category>
-          <Category onClick={onSetCategory('video')}>Video</Category>
-          <Category onClick={onSetCategory('audio')}>Audio</Category>
+          {Object.keys(categories).map((cat) => (
+            <Category key={cat} category={cat} active={category} setCategory={setCategory}>
+              {categories[cat]}
+            </Category>
+          ))}
         </Categories>
         <MediaContainer>
           {data.gallery.map((media) => {
