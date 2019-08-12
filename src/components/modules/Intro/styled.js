@@ -22,15 +22,13 @@ export const IntroContainer = styled.div`
     ${media.tablet`
       text-align: left;
       max-width: 500px;
-      margin-left: 50px;
+      margin-left: 100px;
     `}
   }
 
   ${StyledButton} {
-    font-size: .9em;
-
     ${media.tablet`
-      font-size: 1em;
+      font-size: 1.4em;
     `}
   }
 
@@ -47,7 +45,7 @@ export const IntroContainer = styled.div`
 `;
 
 export const Heading = styled.h1`
-  font-size: 1.5em;
+  font-size: 1.8em;
   font-weight: 600;
   color: ${(props) => props.theme.colors.white};
   margin: 0 0 25px;
@@ -58,6 +56,9 @@ export const Heading = styled.h1`
 `;
 
 export const SeeMore = styled.button`
+  display: flex;
+  align-items: center;
+  width: 178px;
   appearance: none;
   margin: 0;
   border: 0;
@@ -73,7 +74,16 @@ export const SeeMore = styled.button`
   cursor: pointer;
   transition: 300ms transform;
 
+  & img {
+    height: 17px;
+    margin-left: 10px;
+  }
+
   &:hover {
     transform: translate(-50%, -5px);
+  }
+
+  &:focus, &:active {
+    outline: none;
   }
 `;

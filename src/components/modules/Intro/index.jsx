@@ -1,6 +1,7 @@
 import React from 'react';
 
 import data from 'services/appData';
+import ArrowDownImage from 'images/arrow-down.png';
 
 import Container from 'common/Container';
 import Button from 'common/Button';
@@ -17,7 +18,10 @@ const Intro = () => (
       </Button>
       <PayPal />
     </Container>
-    <SeeMore>See more</SeeMore>
+    <SeeMore>
+      See more
+      <img src={ArrowDownImage} alt="Arrow down" />
+    </SeeMore>
   </IntroContainer>
 );
 

@@ -7,7 +7,7 @@ export const StyledButton = styled.button`
   padding: 12px 20px;
   cursor: pointer;
   border: none;
-  font-size: 1.4em;
+  font-size: 1em;
   font-family: ${(props) => props.theme.fonts.sourcesans};
   font-weight: 600;
   text-decoration: none;
