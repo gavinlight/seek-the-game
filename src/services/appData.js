@@ -51,5 +51,9 @@ export default {
       url: 'video1',
       type: 'video',
     },
+    {
+      url: 'audio1',
+      type: 'audio',
+    },
   ],
 };
