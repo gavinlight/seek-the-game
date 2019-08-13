@@ -1,11 +1,10 @@
 import React from 'react';
 import PT from 'prop-types';
 
+import { StyledAudio } from './styled';
+
 const Audio = ({ url }) => (
-  <div style={{ color: 'white', width: '100%' }}>
-    <p>Url: {url}</p>
-    <p>Type: audio</p>
-  </div>
+  <StyledAudio src={url} />
 );
 
 Audio.propTypes = {

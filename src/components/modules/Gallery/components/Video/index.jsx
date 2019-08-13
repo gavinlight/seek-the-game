@@ -1,11 +1,10 @@
 import React from 'react';
 import PT from 'prop-types';
 
+import { StyledVideo } from './styled';
+
 const Video = ({ url }) => (
-  <div style={{ color: 'white', width: '100%' }}>
-    <p>Url: {url}</p>
-    <p>Type: video</p>
-  </div>
+  <StyledVideo src={url} />
 );
 
 Video.propTypes = {
