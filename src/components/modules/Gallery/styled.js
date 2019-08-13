@@ -13,6 +13,7 @@ export const MediaContainer = styled(TransitionGroup)`
   flex-direction: row;
   flex-wrap: wrap;
   justify-content: space-between;
+  margin-top: 20px;
 
   & .media-enter {
     opacity: 0;
