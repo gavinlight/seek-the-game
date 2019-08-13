@@ -22,34 +22,42 @@ export default [
   },
   {
     url: media3,
+    title: 'Deep Ridge Mine',
     type: 'image',
   },
   {
     url: media4,
+    title: 'Pursuit of Happiness',
     type: 'image',
   },
   {
     url: media5,
+    title: 'Gatekeepers House',
     type: 'image',
   },
   {
     url: media6,
+    title: 'River',
     type: 'image',
   },
   {
     url: media7,
+    title: 'Pursuit of Happiness',
     type: 'image',
   },
   {
     url: media8,
+    title: 'Etherwood Station: Gatekeeper Post',
     type: 'image',
   },
   {
     url: media9,
+    title: 'Etherwood Station: Market',
     type: 'image',
   },
   {
     url: media10,
+    title: 'Etherwood Station: Main Halls',
     type: 'image',
   },
   {

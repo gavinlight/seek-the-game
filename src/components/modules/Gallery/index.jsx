@@ -32,12 +32,12 @@ const Gallery = () => {
         </Categories>
         <MediaContainer>
           {data.gallery.map((media) => {
-            const { url, type } = media;
+            const { url, type, ...mediaProps } = media;
             const MediaComponent = mapper(type);
 
             return mediaIsActive(type) && (
               <CSSTransition key={url} timeout={500} classNames="media">
-                <MediaComponent url={url} />
+                <MediaComponent url={url} {...mediaProps} />
               </CSSTransition>
             );
           })}
