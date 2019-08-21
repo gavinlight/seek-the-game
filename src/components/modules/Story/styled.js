@@ -28,7 +28,7 @@ export const Heading = styled.h2`
     width: 75px;
     display: block;
     margin: 20px auto 40px;
-    background-color: ${(props) => props.theme.colors.grey.light};
+    background-color: ${(props) => props.theme.colors.grey};
   }
 `;
 
@@ -40,7 +40,7 @@ export const Paragraph = styled.p`
 
   &:first-letter {
     font-size: 1.5em;
-    color: ${(props) => props.theme.colors.grey};
+    color: ${(props) => props.theme.colors.grey.light};
   }
 
   &:last-child {
