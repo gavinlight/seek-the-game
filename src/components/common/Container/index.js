@@ -26,6 +26,11 @@ const Container = styled.div`
     width: ${sizes.desktop - 50}px;
     max-width: 100%;
   `}
+
+  ${(props) => props.variant === 'tiny' && css`
+    width: ${sizes.tablet - 50}px;
+    max-width: 100%;
+  `}
 `;
 
 Container.propTypes = {

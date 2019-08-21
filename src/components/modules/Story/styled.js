@@ -13,6 +13,7 @@ export const StoryContainer = styled.div`
   background-position: center;
   color: ${(props) => props.theme.colors.white};
   padding: 100px 0;
+  border-bottom: 20px solid ${(props) => props.theme.colors.grey};
 `;
 
 export const Heading = styled.h2`
