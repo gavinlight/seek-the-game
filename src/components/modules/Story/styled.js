@@ -40,7 +40,7 @@ export const Paragraph = styled.p`
 
   &:first-letter {
     font-size: 1.5em;
-    color: ${(props) => props.theme.colors.grey.light};
+    color: ${(props) => props.theme.colors.grey};
   }
 
   &:last-child {
