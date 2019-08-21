@@ -31,10 +31,15 @@ const Container = styled.div`
     width: ${sizes.tablet - 50}px;
     max-width: 100%;
   `}
+
+  ${(props) => props.column && css`
+    display: flex;
+  `}
 `;
 
 Container.propTypes = {
   variant: PT.string,
+  column: PT.bool,
 };
 
 export default Container;
