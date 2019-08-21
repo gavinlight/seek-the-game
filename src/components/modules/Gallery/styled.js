@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { TransitionGroup } from 'react-transition-group';
+
 import { media } from 'styles/utils';
 
 export const GalleryContainer = styled.div`
