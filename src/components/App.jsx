@@ -1,17 +1,15 @@
-import React, { lazy, Suspense } from 'react';
+import React from 'react';
 import { Switch, Route, withRouter } from 'react-router-dom';
 import GlobalStyle from 'styles';
 
-const Home = lazy(() => import('modules/Home'));
+import Home from 'modules/Home';
 
 const App = () => (
   <main>
     <GlobalStyle />
-    <Suspense fallback={<span>loading</span>}>
-      <Switch>
-        <Route path="/" component={Home} exact />
-      </Switch>
-    </Suspense>
+    <Switch>
+      <Route path="/" component={Home} exact />
+    </Switch>
   </main>
 );
 
