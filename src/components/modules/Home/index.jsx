@@ -6,6 +6,7 @@ import Demo from 'modules/Demo';
 import About from 'modules/About';
 import Gallery from 'modules/Gallery';
 import Story from 'modules/Story';
+import Studio from 'modules/Studio';
 
 const Home = () => (
   <Page>
@@ -14,6 +15,7 @@ const Home = () => (
     <About />
     <Gallery />
     <Story />
+    <Studio />
   </Page>
 );
 

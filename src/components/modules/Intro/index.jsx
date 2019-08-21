@@ -14,7 +14,7 @@ const Intro = () => (
   <IntroContainer>
     <Container>
       <Heading dangerouslySetInnerHTML={{ __html: sanitize(data.intro_text) }} />
-      <Button href={data.demo} target="_blank" as="a">
+      <Button href={data.demo} target="_blank" rel="noopener noreferrer" as="a">
         Play our demo
       </Button>
       <PayPal />
