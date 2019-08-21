@@ -3,8 +3,9 @@ import sanitize from 'sanitize-html';
 
 import data from 'services/appData';
 import Container from 'common/Container';
+import Heading from 'common/Heading';
 
-import { StudioContainer, Heading, Text, Logo, Url } from './styled';
+import { StudioContainer, Text, Logo, Url } from './styled';
 
 const Studio = () => (
   <StudioContainer>

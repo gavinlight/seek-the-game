@@ -2,8 +2,9 @@ import React from 'react';
 
 import data from 'services/appData';
 import Container from 'common/Container';
+import Heading from 'common/Heading';
 
-import { AboutContainer, QuoteContainer, TextContainer, Heading, Text } from './styled';
+import { AboutContainer, QuoteContainer, TextContainer, Text } from './styled';
 
 const About = () => (
   <AboutContainer>
@@ -14,7 +15,7 @@ const About = () => (
     </QuoteContainer>
     <TextContainer>
       <Container variant="small">
-        <Heading>{data.about_title}</Heading>
+        <Heading variant="grey">{data.about_title}</Heading>
         <Text>{data.about_text}</Text>
       </Container>
     </TextContainer>

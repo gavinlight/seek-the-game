@@ -3,10 +3,11 @@ import { CSSTransition } from 'react-transition-group';
 
 import data from 'services/appData';
 import Container from 'common/Container';
+import Heading from 'common/Heading';
 
 import mapper from './mapper';
 import { Category } from './components';
-import { GalleryContainer, MediaContainer, Heading, Categories } from './styled';
+import { GalleryContainer, MediaContainer, Categories } from './styled';
 
 const categories = {
   '*': 'All',
@@ -22,7 +23,7 @@ const Gallery = () => {
   return (
     <GalleryContainer>
       <Container>
-        <Heading>{data.gallery_title}</Heading>
+        <Heading variant="red">{data.gallery_title}</Heading>
         <Categories>
           {Object.keys(categories).map((cat) => (
             <Category key={cat} category={cat} active={category} setCategory={setCategory}>
