@@ -22,7 +22,7 @@ const Gallery = () => {
   return (
     <GalleryContainer>
       <Container>
-        <Heading>Some of seek's media</Heading>
+        <Heading>{data.gallery_title}</Heading>
         <Categories>
           {Object.keys(categories).map((cat) => (
             <Category key={cat} category={cat} active={category} setCategory={setCategory}>
