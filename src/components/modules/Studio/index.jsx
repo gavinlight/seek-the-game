@@ -9,7 +9,7 @@ import { StudioContainer, Heading, Text, Logo, Url } from './styled';
 const Studio = () => (
   <StudioContainer>
     <Container variant="tiny">
-      <Heading>The people behind Seek</Heading>
+      <Heading>{data.studio_title}</Heading>
       <Text dangerouslySetInnerHTML={{ __html: sanitize(data.studio_content) }} />
       <a href={data.studio_url} target="_blank" rel="noopener noreferrer">
         <Logo src={data.studio_image} alt="Game Studio Logo" />
