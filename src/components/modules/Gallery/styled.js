@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { TransitionGroup } from 'react-transition-group';
+
 import { media } from 'styles/utils';
 
 export const GalleryContainer = styled.div`
@@ -53,7 +54,7 @@ export const Heading = styled.h2`
 
 export const Categories = styled.div`
   display: flex;
-  margin: 0 auto;
+  margin: 0 auto 40px;
   flex-direction: column;
 
   ${media.tablet`

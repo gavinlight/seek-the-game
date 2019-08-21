@@ -14,7 +14,7 @@ const About = () => (
     </QuoteContainer>
     <TextContainer>
       <Container variant="small">
-        <Heading>What is Seek?</Heading>
+        <Heading>{data.about_title}</Heading>
         <Text>{data.about_text}</Text>
       </Container>
     </TextContainer>
