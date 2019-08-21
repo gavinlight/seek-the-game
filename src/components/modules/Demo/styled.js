@@ -58,6 +58,7 @@ export const Heading = styled.h2`
   font-size: 2em;
   line-height: 1em;
   border-left: 4px solid ${(props) => props.theme.colors.red};
+  text-transform: uppercase;
 `;
 
 export const Text = styled.p`

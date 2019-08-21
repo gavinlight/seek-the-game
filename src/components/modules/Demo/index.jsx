@@ -12,10 +12,10 @@ const Demo = () => (
     <Container variant="small">
       <Video src={data.video} />
       <Content>
-        <Heading>CHECK OUT OUR DEMO!</Heading>
+        <Heading>{data.demo_title}</Heading>
         <Text dangerouslySetInnerHTML={{ __html: sanitize(data.demo_text) }} />
-        <Button href={data.demo} color="grey" as="a" target="_blanl">
-          SEE THE PLAYABLE DEMO
+        <Button href={data.demo} color="grey" as="a" target="_blank" rel="noopener noreferrer">
+          {data.demo_button}
         </Button>
       </Content>
     </Container>

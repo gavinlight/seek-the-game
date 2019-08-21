@@ -14,6 +14,7 @@ export const StyledButton = styled.button`
   color: ${(props) => props.theme.colors.white};
   background-color: ${(props) => props.theme.colors[props.color]};
   transition: 300ms background-color;
+  text-transform: uppercase;
 
   &:hover {
     background-color: ${(props) => props.theme.colors[props.color].hover};
