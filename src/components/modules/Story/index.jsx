@@ -8,7 +8,7 @@ import { StoryContainer, Heading, Paragraph } from './styled';
 
 const Story = () => (
   <StoryContainer>
-    <Container>
+    <Container variant="small">
       <Heading>{data.story_title}</Heading>
       {data.story_paragraphs.map((paragraph) => {
         const props = { [paragraph.type]: true };
