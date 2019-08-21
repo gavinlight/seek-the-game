@@ -1,5 +1,6 @@
 import React from 'react';
 import PT from 'prop-types';
+import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
 import IconClose from 'images/icon-close.png';
 
@@ -8,8 +9,16 @@ import {
 } from './styled';
 
 const Image = ({ url, title = 'Seek', active }) => {
+  const modalRef = React.useRef(null);
   const [modalOpen, setModalOpen] = React.useState(false);
   const onSetModal = (state) => () => setModalOpen(state);
+
+  React.useEffect(() => {
+    const scrollLockFn = modalOpen ? disableBodyScroll : enableBodyScroll;
+    scrollLockFn(modalRef.current);
+
+    return () => clearAllBodyScrollLocks();
+  }, [modalOpen]);
 
   return (
     <>
@@ -19,7 +28,7 @@ const Image = ({ url, title = 'Seek', active }) => {
         alt={title}
       />
       {modalOpen && (
-        <div>
+        <div ref={modalRef}>
           <ModalBackground onClick={onSetModal(false)} />
           <ModalClose onClick={onSetModal(false)} src={IconClose} />
           <ModalContent>
