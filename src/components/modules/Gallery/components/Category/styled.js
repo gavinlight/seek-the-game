@@ -3,6 +3,7 @@ import PT from 'prop-types';
 
 export const CategoryButton = styled.button`
   appearance: none;
+  cursor: pointer;
   margin: 0;
   padding: 10px 20px;
   border: none;
