@@ -34,6 +34,11 @@ const Container = styled.div`
 
   ${(props) => props.column && css`
     display: flex;
+    flex-direction: column;
+
+    ${media.tablet`
+      flex-direction: row;
+    `}
   `}
 `;
 

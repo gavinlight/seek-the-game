@@ -1,4 +1,5 @@
 import gallery from 'services/galleryData';
+import social from 'services/socialData';
 
 import studioLogo from 'static/images/logo.png';
 
@@ -34,4 +35,5 @@ export default {
   studio_content: '<strong>Attic Box Games</strong> is a game development studio founded by students from several universities in the Netherlands. These students practice different courses representing different roles in our studio such as; game development, game artist, business & IT management, web development and sound design. Attic Box Games strives to create games that go beyond ordinairy games. We aim to create experiences with new engaging worlds, enchanting stories and thrilling adventure.',
   studio_image: studioLogo,
   studio_url: 'https://www.facebook.com/AtticBoxStudio',
+  social,
 };
