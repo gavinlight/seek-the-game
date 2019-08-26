@@ -17,6 +17,12 @@ export const HeaderContainer = styled.div`
     margin-bottom: 0;
     font-weight: 800;
     font-size: 2.2em;
+    cursor: pointer;
+    transition: color 300ms;
+
+    &:hover {
+      color: ${(props) => props.theme.colors.grey.light};
+    }
   }
 
   ${(props) => !props.collapsed && css`

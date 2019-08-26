@@ -1,22 +1,15 @@
 import React from 'react';
 import PT from 'prop-types';
 
+import scrollIntoView from 'services/scrollIntoView';
+
 import { StyledMenuItem } from './styled';
 
-const MenuItem = ({ to, children }) => {
-  const navigate = () => {
-    const scrollElem = document.querySelector(to);
-    if (scrollElem) {
-      scrollElem.scrollIntoView({ behavior: 'smooth' });
-    }
-  };
-
-  return (
-    <StyledMenuItem onClick={navigate}>
-      {children}
-    </StyledMenuItem>
-  );
-};
+const MenuItem = ({ to, children }) => (
+  <StyledMenuItem onClick={() => scrollIntoView(to)}>
+    {children}
+  </StyledMenuItem>
+);
 
 MenuItem.propTypes = {
   to: PT.string,

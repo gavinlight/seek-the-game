@@ -1,6 +1,7 @@
 import React from 'react';
 
 import useScrollInfo from 'hooks/useScrollInfo';
+import scrollIntoView from 'services/scrollIntoView';
 import Container from 'common/Container';
 import Heading from 'common/Heading';
 
@@ -21,7 +22,7 @@ const Header = () => {
   return (
     <HeaderContainer collapsed={collapsed}>
       <Container column columnMobile>
-        <Heading border={false}>
+        <Heading border={false} onClick={() => scrollIntoView('#intro')}>
           Seek
         </Heading>
         <Menu>

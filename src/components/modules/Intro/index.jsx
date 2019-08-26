@@ -11,7 +11,7 @@ import PayPal from './components/PayPal';
 import { IntroContainer, Heading, SeeMore } from './styled';
 
 const Intro = () => (
-  <IntroContainer>
+  <IntroContainer id="intro">
     <Container>
       <Heading dangerouslySetInnerHTML={{ __html: sanitize(data.intro_text) }} />
       <Button
