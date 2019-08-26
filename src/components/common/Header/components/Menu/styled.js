@@ -30,6 +30,7 @@ export const MenuItem = styled.li`
     transform: scaleY(0);
     transform-origin: top;
     transition: transform 300ms;
+    transition-delay: 150ms;
   }
 
   &:last-child {
