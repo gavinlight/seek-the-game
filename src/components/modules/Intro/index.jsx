@@ -1,6 +1,7 @@
 import React from 'react';
 import sanitize from 'sanitize-html';
 
+import scrollIntoView from 'services/scrollIntoView';
 import data from 'services/appData';
 import ArrowDownImage from 'images/arrow-down.png';
 
@@ -11,15 +12,21 @@ import PayPal from './components/PayPal';
 import { IntroContainer, Heading, SeeMore } from './styled';
 
 const Intro = () => (
-  <IntroContainer>
+  <IntroContainer id="intro">
     <Container>
       <Heading dangerouslySetInnerHTML={{ __html: sanitize(data.intro_text) }} />
-      <Button href={data.demo} target="_blank" rel="noopener noreferrer" as="a">
+      <Button
+        href={data.demo}
+        target="_blank"
+        rel="noopener noreferrer"
+        as="a"
+        uppercase={false}
+      >
         Play our demo
       </Button>
       <PayPal />
     </Container>
-    <SeeMore>
+    <SeeMore onClick={() => scrollIntoView('#demo')}>
       See more
       <img src={ArrowDownImage} alt="Arrow down" />
     </SeeMore>

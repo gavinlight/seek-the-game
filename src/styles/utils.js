@@ -13,3 +13,10 @@ export const media = Object.keys(sizes).reduce((accumulator, label) => {
   accumulator[label] = (...args) => css` @media (min-width: ${emSize}em) { ${css(...args)}; } `;
   return accumulator;
 }, {});
+
+export const queries = {
+  mobile: '(max-width: 767px)',
+  tablet: '(min-width: 768px)',
+  laptop: '(min-width: 992px)',
+  desktop: '(min-width: 1200px)',
+};

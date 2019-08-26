@@ -7,7 +7,7 @@ import Heading from 'common/Heading';
 import { AboutContainer, QuoteContainer, TextContainer, Text } from './styled';
 
 const About = () => (
-  <AboutContainer>
+  <AboutContainer id="about">
     <QuoteContainer>
       <Container variant="small">
         <Text>"{data.about_quote}"</Text>

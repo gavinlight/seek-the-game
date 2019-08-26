@@ -8,7 +8,7 @@ import Container from 'common/Container';
 import { DemoContainer, Video, Content, Heading, Text } from './styled';
 
 const Demo = () => (
-  <DemoContainer>
+  <DemoContainer id="demo">
     <Container variant="small">
       <Video src={data.video} />
       <Content>
