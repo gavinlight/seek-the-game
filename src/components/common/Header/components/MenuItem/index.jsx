@@ -1,16 +1,7 @@
 import React from 'react';
 import PT from 'prop-types';
-import styled from 'styled-components';
 
-export const StyledMenuItem = styled.li`
-  margin-right: 20px;
-  cursor: pointer;
-  list-style: none;
-
-  &:last-child {
-    margin-right: 0;
-  }
-`;
+import { StyledMenuItem } from './styled';
 
 const MenuItem = ({ to, children }) => {
   const navigate = () => {
