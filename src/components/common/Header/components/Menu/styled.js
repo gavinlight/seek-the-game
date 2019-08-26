@@ -53,6 +53,18 @@ export const ModalContent = styled.div`
   left: 50%;
   top: 25vh;
   transform: translateX(-50%);
+
+  ${MenuItem} {
+    margin-right: 0;
+    font-size: 2.6em;
+    font-weight: 800;
+    text-align: center;
+    margin-bottom: 16px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
+  }
 `;
 
 export const ModalClose = styled.img`

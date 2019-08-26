@@ -15,7 +15,10 @@ const Menu = () => {
   const [activeMedia] = useMediaQuery(queries);
 
   const setMenu = (active) => () => setMenuActive(active);
-  const navigate = (to) => () => scrollIntoView(to);
+  const navigate = (to) => () => {
+    setMenuActive(false);
+    scrollIntoView(to);
+  };
 
   const Items = () => (
     <>
