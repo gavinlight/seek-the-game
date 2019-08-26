@@ -1,6 +1,7 @@
 import React from 'react';
 import sanitize from 'sanitize-html';
 
+import scrollIntoView from 'services/scrollIntoView';
 import data from 'services/appData';
 import ArrowDownImage from 'images/arrow-down.png';
 
@@ -25,7 +26,7 @@ const Intro = () => (
       </Button>
       <PayPal />
     </Container>
-    <SeeMore>
+    <SeeMore onClick={() => scrollIntoView('#demo')}>
       See more
       <img src={ArrowDownImage} alt="Arrow down" />
     </SeeMore>
