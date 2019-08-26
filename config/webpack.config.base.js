@@ -104,6 +104,7 @@ const baseConfig = {
       styles: paths.resolveSrc('styles'),
       vectors: paths.resolveSrc('static/vectors'),
       static: paths.resolveSrc('static'),
+      hooks: paths.resolveSrc('hooks'),
     },
   },
 };
