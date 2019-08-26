@@ -26,8 +26,8 @@ export const HeaderContainer = styled.div`
   }
 
   ${(props) => !props.collapsed && css`
-    padding: 10px 0;
-    background-color: ${(props) => props.theme.colors.grey.opacity};
+    padding: 5px 0;
+    background-color: ${(props) => props.theme.colors.grey.overlay};
   `}
 `;
 

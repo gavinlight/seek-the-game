@@ -7,7 +7,7 @@ export const Background = styled.div`
   width: 100vw;
   height: 100vh;
   z-index: 3;
-  background-color: ${(props) => props.theme.colors.black.opacity};
+  background-color: ${(props) => props.theme.colors.grey.overlay};
   cursor: pointer;
 `;
 
