@@ -11,9 +11,17 @@ const Story = () => (
   <StoryContainer>
     <Container variant="small">
       <Heading variant="grey">{data.story_title}</Heading>
-      {data.story_paragraphs.map((paragraph) => {
+      {data.story_paragraphs.map((paragraph, i) => {
         const props = { [paragraph.type]: true };
-        return <Paragraph {...props} dangerouslySetInnerHTML={{ __html: sanitize(paragraph.content) }} />;
+        return (
+          <Paragraph
+            key={i}
+            {...props}
+            dangerouslySetInnerHTML={{
+              __html: sanitize(paragraph.content),
+            }}
+          />
+        );
       })}
     </Container>
   </StoryContainer>
