@@ -8,6 +8,10 @@ export const StyledMenu = styled.ul`
   color: ${(props) => props.theme.colors.white};
 `;
 
+export const Hamburger = styled.img`
+  cursor: pointer;
+`;
+
 export const MenuItem = styled.li`
   position: relative;
   margin-right: 20px;
@@ -26,6 +30,7 @@ export const MenuItem = styled.li`
     transform: scaleY(0);
     transform-origin: top;
     transition: transform 300ms;
+    transition-delay: 150ms;
   }
 
   &:last-child {
@@ -37,24 +42,7 @@ export const MenuItem = styled.li`
   }
 `;
 
-export const ModalBackground = styled.div`
-  position: fixed;
-  left: 0;
-  top: 0;
-  width: 100vw;
-  height: 100vh;
-  z-index: 3;
-  background-color: ${(props) => props.theme.colors.black.opacity};
-  cursor: pointer;
-`;
-
 export const ModalContent = styled.div`
-  position: fixed;
-  z-index: 4;
-  left: 50%;
-  top: 25vh;
-  transform: translateX(-50%);
-
   ${MenuItem} {
     margin-right: 0;
     font-size: 2.6em;
@@ -75,12 +63,4 @@ export const ModalContent = styled.div`
       color: ${(props) => props.theme.colors.grey.light};
     }
   }
-`;
-
-export const ModalClose = styled.img`
-  position: fixed;
-  z-index: 4;
-  right: 20px;
-  top: 20px;
-  cursor: pointer;
 `;

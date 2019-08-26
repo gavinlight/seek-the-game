@@ -11,7 +11,7 @@ export const HeaderContainer = styled.div`
   padding: 20px 0;
   color: ${(props) => props.theme.colors.white};
   transition: padding 300ms, background-color 300ms;
-  z-index: 1;
+  z-index: 2;
 
   ${Heading} {
     margin-bottom: 0;
@@ -26,8 +26,8 @@ export const HeaderContainer = styled.div`
   }
 
   ${(props) => !props.collapsed && css`
-    padding: 10px 0;
-    background-color: ${(props) => props.theme.colors.grey.opacity};
+    padding: 5px 0;
+    background-color: ${(props) => props.theme.colors.grey.overlay};
   `}
 `;
 

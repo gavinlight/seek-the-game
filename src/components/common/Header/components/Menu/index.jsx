@@ -1,28 +1,18 @@
 import React from 'react';
-import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
 import useMediaQuery from 'hooks/useMediaQuery';
 import scrollIntoView from 'services/scrollIntoView';
 import { queries } from 'styles/utils';
-
-import IconClose from 'images/icon-close.png';
 import IconHamburger from 'images/hamburger.png';
 
-import { StyledMenu, MenuItem, ModalBackground, ModalClose, ModalContent } from './styled';
+import Modal from 'common/Modal';
+
+import { StyledMenu, Hamburger, MenuItem, ModalContent } from './styled';
 
 const Menu = () => {
-  const modalRef = React.useRef(null);
   const [menuActive, setMenuActive] = React.useState(false);
   const [activeMedia] = useMediaQuery(queries);
 
-  React.useEffect(() => {
-    const scrollLockFn = menuActive ? disableBodyScroll : enableBodyScroll;
-    scrollLockFn(modalRef.current);
-
-    return () => clearAllBodyScrollLocks();
-  }, [menuActive]);
-
-  const setMenu = (active) => () => setMenuActive(active);
   const navigate = (to) => () => {
     setMenuActive(false);
     scrollIntoView(to);
@@ -43,15 +33,17 @@ const Menu = () => {
       {activeMedia === 'mobile'
         ? (
           <>
-            <img src={IconHamburger} alt="hamburger" onClick={setMenu(true)} />
+            <Hamburger
+              src={IconHamburger}
+              alt="hamburger"
+              onClick={() => setMenuActive(true)}
+            />
             {menuActive && (
-              <div ref={modalRef}>
-                <ModalBackground onClick={setMenu(false)} />
-                <ModalClose onClick={setMenu(false)} src={IconClose} />
+              <Modal open={menuActive} closeModal={() => setMenuActive(false)}>
                 <ModalContent>
                   <Items />
                 </ModalContent>
-              </div>
+              </Modal>
             )}
           </>
         )

@@ -7,6 +7,7 @@ export default {
     grey: Object.assign('#212121', {
       hover: '#363636',
       opacity: 'rgba(33, 33, 33, 0.5)',
+      overlay: 'rgba(20, 20, 20, 0.75)',
       light: '#878787',
       dark: '#141414',
     }),
