@@ -5,6 +5,7 @@ import scrollIntoView from 'services/scrollIntoView';
 import { queries } from 'styles/utils';
 
 import IconClose from 'images/icon-close.png';
+import IconHamburger from 'images/hamburger.png';
 
 import { StyledMenu, MenuItem, ModalBackground, ModalClose, ModalContent } from './styled';
 
@@ -31,7 +32,7 @@ const Menu = () => {
       {activeMedia === 'mobile'
         ? (
           <>
-            <button type="button" onClick={setMenu(true)}>Open menu</button>
+            <img src={IconHamburger} alt="hamburger" onClick={setMenu(true)} />
             {menuActive && (
               <div ref={modalRef}>
                 <ModalBackground onClick={setMenu(false)} />
