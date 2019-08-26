@@ -20,12 +20,14 @@ export const ModalBackground = styled.div`
   top: 0;
   width: 100vw;
   height: 100vh;
+  z-index: 3;
   background-color: ${(props) => props.theme.colors.black.opacity};
   cursor: pointer;
 `;
 
 export const ModalContent = styled.div`
   position: fixed;
+  z-index: 4;
   left: 50%;
   top: 25vh;
   transform: translateX(-50%);
@@ -33,6 +35,7 @@ export const ModalContent = styled.div`
 
 export const ModalClose = styled.img`
   position: fixed;
+  z-index: 4;
   right: 20px;
   top: 20px;
   cursor: pointer;

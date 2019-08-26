@@ -1,12 +1,13 @@
 import React from 'react';
 
 import useScrollInfo from 'hooks/useScrollInfo';
+
 import scrollIntoView from 'services/scrollIntoView';
 import Container from 'common/Container';
 import Heading from 'common/Heading';
 
-import MenuItem from './components/MenuItem';
-import { HeaderContainer, Menu } from './styled';
+import Menu from './components/Menu';
+import { HeaderContainer } from './styled';
 
 const Header = () => {
   const [collapsed, setCollapsed] = React.useState(false);
@@ -25,13 +26,7 @@ const Header = () => {
         <Heading border={false} onClick={() => scrollIntoView('#intro')}>
           Seek
         </Heading>
-        <Menu>
-          <MenuItem to="#about">Game</MenuItem>
-          <MenuItem to="#gallery">Media</MenuItem>
-          <MenuItem to="#story">Prologue</MenuItem>
-          <MenuItem to="#studio">Team</MenuItem>
-          <MenuItem to="#contact">Contact</MenuItem>
-        </Menu>
+        <Menu />
       </Container>
     </HeaderContainer>
   );

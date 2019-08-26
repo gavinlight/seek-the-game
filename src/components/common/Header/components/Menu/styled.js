@@ -1,6 +1,13 @@
 import styled from 'styled-components';
 
-export const StyledMenuItem = styled.li`
+export const StyledMenu = styled.ul`
+  display: flex;
+  align-items: center;
+  padding-left: 0;
+  margin: 0 0 0 auto;
+`;
+
+export const MenuItem = styled.li`
   position: relative;
   margin-right: 20px;
   cursor: pointer;

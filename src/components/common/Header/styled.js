@@ -34,10 +34,3 @@ export const HeaderContainer = styled.div`
 HeaderContainer.propTypes = {
   collapsed: PT.bool,
 };
-
-export const Menu = styled.ul`
-  display: flex;
-  align-items: center;
-  padding-left: 0;
-  margin: 0 0 0 auto;
-`;
