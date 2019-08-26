@@ -1,4 +1,4 @@
-import styled from 'styled-components';
+import styled, { css } from 'styled-components';
 import PT from 'prop-types';
 
 export const StyledButton = styled.button`
@@ -14,7 +14,10 @@ export const StyledButton = styled.button`
   color: ${(props) => props.theme.colors.white};
   background-color: ${(props) => props.theme.colors[props.color]};
   transition: 300ms background-color;
-  text-transform: uppercase;
+
+  ${(props) => props.uppercase && css`
+    text-transform: uppercase;
+  `}
 
   &:hover {
     background-color: ${(props) => props.theme.colors[props.color].hover};
@@ -23,4 +26,5 @@ export const StyledButton = styled.button`
 
 StyledButton.propTypes = {
   color: PT.oneOf(['red', 'grey']),
+  uppercase: PT.bool,
 };

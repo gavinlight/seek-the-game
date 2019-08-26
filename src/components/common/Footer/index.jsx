@@ -6,7 +6,7 @@ import Container from 'common/Container';
 import { FooterContainer, Column, Heading, Links, Link, Icon, Url } from './styled';
 
 const Footer = () => (
-  <FooterContainer>
+  <FooterContainer id="contact">
     <Container variant="small" column>
       <Column big>
         <Heading>Find us at</Heading>

@@ -13,10 +13,10 @@ const Header = () => (
         Seek
       </Heading>
       <Menu>
-        <MenuItem to="#game">Game</MenuItem>
-        <MenuItem to="#media">Media</MenuItem>
-        <MenuItem to="#prologue">Prologue</MenuItem>
-        <MenuItem to="#team">Team</MenuItem>
+        <MenuItem to="#about">Game</MenuItem>
+        <MenuItem to="#gallery">Media</MenuItem>
+        <MenuItem to="#story">Prologue</MenuItem>
+        <MenuItem to="#studio">Team</MenuItem>
         <MenuItem to="#contact">Contact</MenuItem>
       </Menu>
     </Container>

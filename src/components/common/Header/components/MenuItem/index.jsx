@@ -12,17 +12,11 @@ export const StyledMenuItem = styled.li`
   }
 `;
 
-
 const MenuItem = ({ to, children }) => {
   const navigate = () => {
     const scrollElem = document.querySelector(to);
-
     if (scrollElem) {
-      window.scrollTo({
-        top: scrollElem.getBoundingClientRect().top,
-        left: 0,
-        behavior: 'smooth',
-      });
+      scrollElem.scrollIntoView({ behavior: 'smooth' });
     }
   };
 

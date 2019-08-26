@@ -8,7 +8,7 @@ import Heading from 'common/Heading';
 import { StoryContainer, Paragraph } from './styled';
 
 const Story = () => (
-  <StoryContainer>
+  <StoryContainer id="story">
     <Container variant="small">
       <Heading variant="grey">{data.story_title}</Heading>
       {data.story_paragraphs.map((paragraph, i) => {

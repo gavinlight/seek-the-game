@@ -21,7 +21,7 @@ const Gallery = () => {
   const mediaIsActive = (type) => category === '*' || type === category;
 
   return (
-    <GalleryContainer>
+    <GalleryContainer id="gallery">
       <Container>
         <Heading variant="red">{data.gallery_title}</Heading>
         <Categories>

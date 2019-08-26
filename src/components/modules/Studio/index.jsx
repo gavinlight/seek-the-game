@@ -8,7 +8,7 @@ import Heading from 'common/Heading';
 import { StudioContainer, Text, Logo, Url } from './styled';
 
 const Studio = () => (
-  <StudioContainer>
+  <StudioContainer id="studio">
     <Container variant="tiny">
       <Heading>{data.studio_title}</Heading>
       <Text dangerouslySetInnerHTML={{ __html: sanitize(data.studio_content) }} />
