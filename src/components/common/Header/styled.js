@@ -11,7 +11,7 @@ export const HeaderContainer = styled.div`
   padding: 20px 0;
   color: ${(props) => props.theme.colors.white};
   transition: padding 300ms, background-color 300ms;
-  z-index: 1;
+  z-index: 2;
 
   ${Heading} {
     margin-bottom: 0;
