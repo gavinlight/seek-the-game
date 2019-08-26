@@ -1,4 +1,5 @@
 import React from 'react';
+import { disableBodyScroll, enableBodyScroll, clearAllBodyScrollLocks } from 'body-scroll-lock';
 
 import useMediaQuery from 'hooks/useMediaQuery';
 import scrollIntoView from 'services/scrollIntoView';
@@ -13,6 +14,13 @@ const Menu = () => {
   const modalRef = React.useRef(null);
   const [menuActive, setMenuActive] = React.useState(false);
   const [activeMedia] = useMediaQuery(queries);
+
+  React.useEffect(() => {
+    const scrollLockFn = menuActive ? disableBodyScroll : enableBodyScroll;
+    scrollLockFn(modalRef.current);
+
+    return () => clearAllBodyScrollLocks();
+  }, [menuActive]);
 
   const setMenu = (active) => () => setMenuActive(active);
   const navigate = (to) => () => {

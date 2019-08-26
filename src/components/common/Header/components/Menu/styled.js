@@ -13,6 +13,7 @@ export const MenuItem = styled.li`
   margin-right: 20px;
   cursor: pointer;
   list-style: none;
+  transition: color 300ms;
 
   &:after {
     content: '';
@@ -60,9 +61,18 @@ export const ModalContent = styled.div`
     font-weight: 800;
     text-align: center;
     margin-bottom: 16px;
+    transition: color 300ms;
 
     &:last-child {
       margin-bottom: 0;
+    }
+
+    &:after {
+      display: none;
+    }
+
+    &:hover {
+      color: ${(props) => props.theme.colors.grey.light};
     }
   }
 `;
