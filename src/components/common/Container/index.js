@@ -34,7 +34,10 @@ const Container = styled.div`
 
   ${(props) => props.column && css`
     display: flex;
-    flex-direction: column;
+
+    ${(props) => !props.columnMobile && css`
+      flex-direction: column;
+    `}
 
     ${media.tablet`
       flex-direction: row;
@@ -45,6 +48,7 @@ const Container = styled.div`
 Container.propTypes = {
   variant: PT.string,
   column: PT.bool,
+  columnMobile: PT.bool,
 };
 
 export default Container;

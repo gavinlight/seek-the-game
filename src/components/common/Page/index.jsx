@@ -2,6 +2,7 @@ import React from 'react';
 import PT from 'prop-types';
 import styled from 'styled-components';
 
+import Header from 'common/Header';
 import Footer from 'common/Footer';
 
 const StyledPage = styled.div`
@@ -10,6 +11,7 @@ const StyledPage = styled.div`
 
 const Page = ({ children }) => (
   <StyledPage>
+    <Header />
     {children}
     <Footer />
   </StyledPage>
