@@ -54,15 +54,20 @@ export const Links = styled.div`
 `;
 
 export const Link = styled.div`
-  width: 50%;
-  margin-bottom: 10px;
   display: flex;
   align-items: center;
+  width: 50%;
+  margin-bottom: 10px;
 `;
 
 export const Icon = styled.img`
-  width: 50px;
-  margin-right: 14px;
+  width: 25px;
+  margin-right: 6px;
+
+  ${media.mobile`
+    width: 50px;
+    margin-right: 14px;
+  `}
 `;
 
 export const Url = styled.a`
