@@ -17,14 +17,16 @@ export const Text = styled.p`
 `;
 
 export const Logo = styled.img`
-  margin: 40px auto;
   display: block;
+  max-width: 100%;
+  margin: 40px auto;
 `;
 
 export const Url = styled.a`
+  display: block;
+  color: ${(props) => props.theme.colors.white};
   font-size: 1.2em;
   font-weight: 700;
-  display: block;
   text-align: center;
-  color: ${(props) => props.theme.colors.white};
+  word-break: break-word;
 `;
