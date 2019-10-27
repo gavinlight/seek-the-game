@@ -12,7 +12,8 @@ const Image = ({ url, title = 'Seek', active }) => {
     <>
       <StyledImage
         onClick={() => setModalOpen(true)}
-        src={url}
+        image={url}
+        role="img"
         alt={title}
       />
       {modalOpen && (
