@@ -8,7 +8,7 @@ export const StudioContainer = styled.div`
   padding: 20px 0;
 
   ${media.tablet`
-    padding: 100px;
+    padding: 100px 0 40px;
   `}
 `;
 
@@ -20,13 +20,4 @@ export const Logo = styled.img`
   display: block;
   max-width: 100%;
   margin: 40px auto;
-`;
-
-export const Url = styled.a`
-  display: block;
-  color: ${(props) => props.theme.colors.white};
-  font-size: 1.2em;
-  font-weight: 700;
-  text-align: center;
-  word-break: break-word;
 `;
