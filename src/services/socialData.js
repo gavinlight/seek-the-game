@@ -4,7 +4,7 @@ import YoutubeIcon from 'images/social/youtube.png';
 import SocialIcon from 'images/social/social.png';
 
 export default {
-  email: 'info@atticboxgames.com',
+  email: 'contact@atticboxgames.com',
   links: [
     {
       text: 'Facebook',
