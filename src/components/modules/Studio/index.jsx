@@ -16,7 +16,7 @@ const Studio = () => (
         <Logo src={data.studio_image} alt="Game Studio Logo" />
       </a>
       <Url href={data.studio_url} target="_blank" rel="noopener noreferrer">
-        {data.studio_url}
+        {data.studio_label}
       </Url>
     </Container>
   </StudioContainer>
