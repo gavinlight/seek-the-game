@@ -5,7 +5,7 @@ import Modal from 'common/Modal';
 
 import { StyledImage, ModalImage, ModalTitle } from './styled';
 
-const Image = ({ url, title = 'Seek', active }) => {
+const Image = ({ url, title = 'Seek' }) => {
   const [modalOpen, setModalOpen] = React.useState(false);
 
   return (
@@ -29,7 +29,6 @@ const Image = ({ url, title = 'Seek', active }) => {
 Image.propTypes = {
   url: PT.string,
   title: PT.string,
-  active: PT.bool,
 };
 
 export default Image;
