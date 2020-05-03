@@ -2,7 +2,7 @@ import gallery from 'services/galleryData';
 import social from 'services/socialData';
 
 export default {
-  demo: 'https://gamejolt.com/games/seek/30152/download/build/635107',
+  demo: 'https://gamejolt.com/games/Seek/30152/download/build/821663',
   video: 'https://www.youtube.com/embed/QNaLUWtDwV8?rel=0&controls=0&showinfo=0',
   paypal_id: 'LQJ8Y9QZUP9H6',
   intro_text: 'Seek is an atmospheric and terrifying game.<br />Be prepared',
